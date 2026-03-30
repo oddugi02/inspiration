@@ -18,6 +18,8 @@
 </head>
 
 <body>
+
+
     <main class="container home-container">
         <header class="header">
             <h1 class="title">영감은 어디에나 있습니다</h1>
@@ -25,16 +27,49 @@
         </header>
 
         <nav class="actions">
-            <button class="btn btn-outside" id="btn-outside">
-                <i class="ph-thin ph-map-trifold"></i>
-                <span>밖에서 영감얻기</span>
-                <i class="ph-thin ph-caret-right mini-icon"></i>
-            </button>
-            <button class="btn btn-inside" id="btn-inside">
-                <i class="ph-thin ph-house"></i>
-                <span>방구석 영감얻기</span>
-                <i class="ph-thin ph-caret-right mini-icon"></i>
-            </button>
+            <div class="nav-group">
+                <button class="btn btn-outside dropdown-header" id="btn-outside">
+                    <i class="ph-thin ph-map-trifold"></i>
+                    <span>밖에서 영감얻기</span>
+                    <i class="ph-thin ph-caret-down mini-icon"></i>
+                </button>
+                <div class="sub-menu">
+                    <a href="exhibitions.html" class="sub-btn">
+                        <i class="ph-thin ph-paint-brush-broad"></i>
+                        <span>전시 탐색</span>
+                    </a>
+                    <a href="places.html" class="sub-btn">
+                        <i class="ph-thin ph-map-pin"></i>
+                        <span>장소 탐색</span>
+                    </a>
+                    <a href="books.html" class="sub-btn">
+                        <i class="ph-thin ph-book-open"></i>
+                        <span>도서</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="nav-group">
+                <button class="btn btn-inside dropdown-header" id="btn-inside">
+                    <i class="ph-thin ph-house"></i>
+                    <span>방구석 영감얻기</span>
+                    <i class="ph-thin ph-caret-down mini-icon"></i>
+                </button>
+                <div class="sub-menu">
+                    <a href="references.html" class="sub-btn">
+                        <i class="ph-thin ph-browsers"></i>
+                        <span>레퍼런스 사이트</span>
+                    </a>
+                    <a href="studios.html" class="sub-btn">
+                        <i class="ph-thin ph-cube"></i>
+                        <span>디자인 스튜디오</span>
+                    </a>
+                    <a href="knowledge.html" class="sub-btn">
+                        <i class="ph-fill ph-sparkle"></i>
+                        <span>지식 조각</span>
+                    </a>
+                </div>
+            </div>
         </nav>
 
 

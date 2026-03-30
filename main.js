@@ -1,20 +1,6 @@
 // Version 2.0.1
 document.addEventListener('DOMContentLoaded', () => {
-    // Navigation Logic
-    const btnOutside = document.getElementById('btn-outside');
-    const btnInside = document.getElementById('btn-inside');
-
-    if (btnOutside) {
-        btnOutside.addEventListener('click', () => {
-            location.href = 'outside.html';
-        });
-    }
-
-    if (btnInside) {
-        btnInside.addEventListener('click', () => {
-            location.href = 'inside.html';
-        });
-    }
+    // Navigation Logic - Handled by hover dropdown in style.css
 
     // Exhibition Filtering Logic
     const filterToggle = document.getElementById('current-filter');

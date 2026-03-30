@@ -167,9 +167,104 @@ input:checked + .slider:before {
 
 .actions {
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem;
     justify-content: center;
-    flex-wrap: nowrap; /* Forces horizontal row */
+    align-items: flex-start; /* Important: Align groups to top to handle expansion */
+}
+
+/* Sparkle Animation for Knowledge Icon */
+.sub-btn i.ph-sparkle {
+    color: var(--color-blue);
+    animation: sparkle 3s infinite ease-in-out;
+}
+
+@keyframes sparkle {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.8; transform: scale(1.1); filter: drop-shadow(0 0 8px rgba(43, 112, 255, 0.4)); }
+}
+
+/* Disable main button navigation */
+.dropdown-header {
+    cursor: default !important; /* Visual hint that it's a header */
+    pointer-events: auto; /* Still needs to receive hover events */
+}
+
+.dropdown-header:active {
+    transform: none !important; /* No click feedback */
+}
+
+/* Nav Group for Hover Logic */
+.nav-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-bottom: 2rem; /* Buffer for hover stability */
+}
+
+.sub-menu {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    pointer-events: none;
+    margin-top: 0.5rem;
+}
+
+.nav-group:hover .sub-menu {
+    max-height: 400px;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+/* Submenu Buttons - No outlines as requested */
+.sub-btn {
+    padding: 1.2rem 2.5rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    transition: all 0.2s ease;
+    width: 100%;
+    justify-content: center;
+    border: none;
+    background: transparent;
+    border-radius: 50px;
+    letter-spacing: 0.02em;
+}
+
+.sub-btn i {
+    font-size: 1.2rem;
+}
+
+.sub-btn:hover {
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.08); /* Slightly more visible background */
+    transform: scale(1.02); /* More subtle scale feels more premium */
+}
+
+/* Explicit text emphasis on hover - Thin Gradient style */
+.sub-btn:hover span {
+    font-weight: 300; /* Keep it thin as requested */
+    background: linear-gradient(135deg, #2b70ff, #8b31ff); /* Vivid Blue to Purple gradient */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 0.04em;
+}
+
+.sub-btn:hover i {
+    transform: scale(1.1) rotate(-5deg); /* Playful icon movement */
+    color: var(--color-blue); /* Shared emphasis color */
 }
 
 .btn {
@@ -185,7 +280,7 @@ input:checked + .slider:before {
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
     text-decoration: none;
     position: relative;
     overflow: hidden;
