@@ -75,6 +75,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    text-align: left; /* Left align discovery headers */
 }
 
 .filter-container {
@@ -151,6 +152,17 @@ input:checked + .slider:before {
     font-weight: 200;
     color: var(--text-secondary);
     letter-spacing: 0.05em;
+}
+
+.update-notice {
+    font-family: var(--font-family);
+    font-style: italic;
+    font-size: 0.85rem;
+    color: var(--color-blue);
+    opacity: 0.7;
+    margin-top: 0.5rem; /* Space above notice when below subtitle */
+    display: block;
+    letter-spacing: 0.02em;
 }
 
 .actions {
@@ -521,10 +533,25 @@ input:checked + .slider:before {
     text-align: left;
     display: block;
     min-height: auto;
+    align-items: flex-start; /* Ensure left alignment */
 }
 
-.book-category-section {
-    margin-bottom: 2rem;
+/* Global Subpage Reset */
+.subpage-container,
+.places-container,
+.exhibitions-container,
+.books-container,
+.reference-page-container,
+.studio-page-container {
+    align-items: flex-start !important;
+    text-align: left !important;
+}
+
+.subpage-container .header,
+.places-container .header-discovery,
+.books-container .header-discovery {
+    text-align: left !important;
+    width: 100%;
 }
 
 .category-header {
@@ -900,11 +927,10 @@ input:checked + .slider:before {
 }
 
 /* Let's inject vibrant colors into random cards */
-.book-card:nth-child(5n+1):hover { transform: translateY(-8px) rotate(-1deg); box-shadow: 0 20px 40px rgba(43,112,255,0.2) !important; }
-.book-card:nth-child(5n+2):hover { transform: translateY(-8px) rotate(1deg); box-shadow: 0 20px 40px rgba(255,90,54,0.2) !important; }
-.book-card:nth-child(5n+3):hover { transform: translateY(-8px) rotate(-1.5deg); box-shadow: 0 20px 40px rgba(255,196,0,0.2) !important; }
-.book-card:nth-child(5n+4):hover { transform: translateY(-8px) rotate(2deg); box-shadow: 0 20px 40px rgba(187,248,16,0.2) !important; }
-.book-card:nth-child(5n+5):hover { transform: translateY(-8px) rotate(-2deg); box-shadow: 0 20px 40px rgba(139,49,255,0.2) !important; }
+.book-card:hover { 
+    transform: translateY(-5px); 
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08) !important; 
+}
 
 /* Let's color standard buttons */
 .btn-primary {
@@ -936,19 +962,34 @@ input:checked + .slider:before {
     font-size: 0.9rem;
     color: var(--color-blue);
 }
+.filter-scroll-wrapper {
+    position: relative;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
 .filter-chip-container {
     display: flex;
+    flex-wrap: wrap; /* Wrap into multiple rows as requested */
     gap: 0.75rem;
-    padding: 1.5rem 0;
-    overflow-x: auto;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    margin-bottom: 2rem;
+    padding: 0.5rem 0;
+    margin-bottom: 0;
 }
 
 .filter-chip-container::-webkit-scrollbar {
     display: none;
 }
+
+.filter-chip-container::-webkit-scrollbar-thumb {
+    background: #cbd5e1; /* Neutral gray as requested */
+    border-radius: 10px;
+    transition: background 0.3s ease;
+}
+
+.filter-chip-container::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8; /* Slightly darker gray on hover */
+}
+
 
 .filter-chip {
     display: flex;
