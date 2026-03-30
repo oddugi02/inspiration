@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영감 | 장소 탐색</title>
+
+    <!-- Pretendard Font -->
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .studio-card {
+            cursor: default;
+        }
+
+        .studio-card:hover {
+            transform: none;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav-top-left">
+        <button class="btn-icon-only" onclick="location.href='outside.html'" title="뒤로가기">
+            <i class="ph-thin ph-arrow-left"></i>
+        </button>
+    </nav>
+
+    <main class="container">
+        <header class="header-discovery">
+            <div>
+                <h1 class="title">장소 탐색</h1>
+                <p class="subtitle">영감을 깨우는 서울의 특별한 공간들</p>
+            </div>
+        </header>
+
+        <div class="filter-chip-container global-filter-container">
+            <button class="filter-chip active" data-filter="all">
+                <i class="ph-thin ph-circles-four"></i>전체
+            </button>
+            <button class="filter-chip" data-filter="library">
+                <i class="ph-thin ph-books"></i>아카이브
+            </button>
+            <button class="filter-chip" data-filter="gallery">
+                <i class="ph-thin ph-frame-corners"></i>갤러리
+            </button>
+            <button class="filter-chip" data-filter="store">
+                <i class="ph-thin ph-storefront"></i>스토어
+            </button>
+            <button class="filter-chip" data-filter="cinema">
+                <i class="ph-thin ph-film-strip"></i>복합문화
+            </button>
+            <button class="filter-chip" data-filter="material">
+                <i class="ph-thin ph-swatches"></i>소재 연구소
+            </button>
+        </div>
+
+        <div class="studio-categories reveal">
+
+            <div class="studio-category" data-category="library">
+                <section class="studio-grid">
+
+                    <div class="studio-card" data-tag="인쇄 매체">
+                        <span class="studio-chip" style="background: var(--color-blue); color: #fff; border: none;">인쇄
+                            매체</span>
+                        <h3 class="studio-name">이라선</h3>
+                        <p class="studio-description">사진집 전문 독립 서점. 다양한 인쇄 매체의 레이아웃과 사진 기반 시각 아카이빙 방식을 살펴볼 수 있습니다.</p>
+                    </div>
+
+                    <div class="studio-card" data-tag="정보 디자인">
+                        <span class="studio-chip" style="background: var(--color-orange); color: #fff; border: none;">정보
+                            디자인</span>
+                        <h3 class="studio-name">서울시립 미술아카이브</h3>
+                        <p class="studio-description">한국 현대미술의 문헌과 자료를 보존하는 공간. 방대한 자료의 체계적 분류와 정보 디자인 방식을 확인할 수 있습니다.
+                        </p>
+                    </div>
+
+                    <div class="studio-card" data-tag="에디토리얼 디자인">
+                        <span class="studio-chip"
+                            style="background: var(--color-purple); color: #fff; border: none;">에디토리얼 디자인</span>
+                        <h3 class="studio-name">Ofr 서울</h3>
+                        <p class="studio-description">파리 기반 독립 서점의 서울 지점. 다양한 독립매거진과 포스터를 통해 자유로운 편집 및 레이아웃을 참고할 수 있습니다.
+                        </p>
+                    </div>
+
+                    <div class="studio-card" data-tag="편집 디자인">
+                        <span class="studio-chip" style="background: var(--color-green); color: #111; border: none;">편집
+                            디자인</span>
+                        <h3 class="studio-name">PDF SEOUL</h3>
+                        <p class="studio-description">시각 디자인, 사진 등 전문 서적을 취급하는 서점. 다양한 인쇄 매체를 확인하고 편집 디자인 레퍼런스를 살펴볼 수
+                            있습니다.</p>
+                    </div>
+
+                    <div class="studio-card" data-tag="디자인 아카이브">
+                        <span class="studio-chip"
+                            style="background: var(--color-yellow); color: #111; border: none;">디자인 아카이브</span>
+                        <h3 class="studio-name">현대카드 디자인 라이브러리</h3>
+                        <p class="studio-description">시각 예술 중심의 희귀 서적을 다수 보유한 디자인 도서관. 방대한 자료를 통해 아날로그 아카이브의 구축 방식을 경험할
+                            수 있습니다.</p>
+                    </div>
+
+                    <div class="studio-card" data-tag="앨범 아트">
+                        <span class="studio-chip" style="background: var(--color-blue); color: #fff; border: none;">앨범
+                            아트</span>
+                        <h3 class="studio-name">현대카드 뮤직 라이브러리</h3>
+                        <p class="studio-description">전 세계 희귀 바이닐 앨범을 보유한 음악 도서관. 앨범 커버를 통해 시대별 그래픽 디자인의 흐름과 타이포그래피를 확인해
+                            볼 수 있습니다.</p>
+                    </div>
+
+                    <div class="studio-card" data-tag="현대미술 서적">
+                        <span class="studio-chip"
+                            style="background: var(--color-orange); color: #fff; border: none;">현대미술 서적</span>
+                        <h3 class="studio-name">현대카드 아트 라이브러리</h3>
+                        <p class="studio-description">현대 미술 전문 서적을 다루는 도서관. 다양한 예술, 퍼포먼스, 사진 서적을 열람하며 시각적 관점을 넓힐 수 있는
+                            공간입니다.</p>
+                    </div>
+
+                </section>
+            </div>
+
+            <div class="studio-category" data-category="gallery">
+                <section class="studio-grid">
+
+                    <div class="studio-card" data-tag="현대미술 큐레이션">
+                        <span class="studio-chip"
+                            style="background: var(--color-purple); color: #fff; border: none;">현대미술 큐레이션</span>
+                        <h3 class="studio-name">갤러리 현대</h3>
+                        <p class="studio-description">한국 현대미술을 대표하는 주요 갤러리. 기획 전시를 통해 시대별 조형미와 큐레이션 방식을 관찰할 수 있습니다.</p>
+                    </div>
+
+                    <div class="studio-card" data-tag="미디어 아트">
+                        <span class="studio-chip" style="background: var(--color-green); color: #111; border: none;">미디어
+                            아트</span>
+                        <h3 class="studio-name">푸투라 서울</h3>
+                        <p class="studio-description">북촌의 복합 문화 공간으로 몰입형 미디어 아트 기획 전시를 진행합니다. 최신 시각 기술을 접목한 공간 연출 방식을
+                            보여줍니다.</p>
+                    </div>
+
+                    <div class="studio-card" data-tag="다원예술">
+                        <span class="studio-chip"
+                            style="background: var(--color-yellow); color: #111; border: none;">다원예술</span>
+                        <h3 class="studio-name">팩토리2</h3>
+                        <p class="studio-description">다양한 예술 프로젝트와 출판물을 선보이는 독립 공간. 시각 예술의 실험적인 프로세스를 관찰하기 좋습니다.</p>
+                    </div>
+
+                    <div class="studio-card" data-tag="공감각적 디자인">
+                        <span class="studio-chip" style="background: var(--color-blue); color: #fff; border: none;">공감각적
+                            디자인</span>
+                        <h3 class="studio-name">오디움 (Audeum)</h3>
+                        <p class="studio-description">음향 기기의 역사를 다루는 오디오 박물관. 체계적인 내부 레이아웃과 소리를 결합한 공감각적 전시 기획을 경험할 수
+                            있습니다.</p>
+                    </div>
+
+                    <div class="studio-card" data-tag="전시 브랜딩">
+                        <span class="studio-chip" style="background: var(--color-orange); color: #fff; border: none;">전시
+                            브랜딩</span>
+                        <h3 class="studio-name">문화역서울284</h3>
+                        <p class="studio-description">구 서울역사를 개조하여 만들어진 전시 공간. 근대 건축유산의 물성과 현대적인 융복합 기획 전시가 만드는 시각적 대비를
+                            살펴볼 수 있습니다.</p>
+                    </div>
+
+                </section>
+            </div>
+
+            <div class="studio-category" data-category="store">
+                <section class="studio-grid">
+
+                    <div class="studio-card" data-tag="키네틱 아트">
+                        <span class="studio-chip"
+                            style="background: var(--color-purple); color: #fff; border: none;">키네틱 아트</span>
+                        <h3 class="studio-name">하우스노웨어 서울</h3>
+                        <p class="studio-description">설치 미술과 키네틱 아트를 선보이는 복합 리테일 쇼룸. 여러 브랜드의 아이덴티티가 입체적으로 시각화되는 방식을 관찰할
+                            수 있습니다.</p>
+                    </div>
+
+                    <div class="studio-card" data-tag="시각적 큐레이션">
+                        <span class="studio-chip" style="background: var(--color-green); color: #111; border: none;">시각적
+                            큐레이션</span>
+                        <h3 class="studio-name">포인트오브뷰 서울</h3>
+                        <p class="studio-description">창작을 위한 다양한 도구를 선보이는 문구숍. 사물을 활용한 디스플레이 기법과 오브제 기반의 시각적 스토리텔링을 참고할
+                            수 있습니다.</p>
+                    </div>
+
+                    <div class="studio-card" data-tag="공예 디자인">
+                        <span class="studio-chip" style="background: var(--color-yellow); color: #111; border: none;">공예
+                            디자인</span>
+                        <h3 class="studio-name">쌈지길</h3>
+                        <p class="studio-description">건축물과 길이 하나로 이어지는 나선형 구조의 복합 공간. 외부 동선과 여러 공예 브랜드 숍들이 유기적으로 결합된 형태를
+                            보여줍니다.</p>
+                    </div>
+
+
+                    <div class="studio-card" data-tag="설치 미술">
+                        <span class="studio-chip" style="background: var(--color-purple); color: #fff; border: none;">설치
+                            미술</span>
+                        <h3 class="studio-name">탬버린즈 플래그십스토어</h3>
+                        <p class="studio-description">다양한 오브제와 조형물을 전시하는 뷰티 쇼룸 상업 공간. 뷰티 브랜드가 제품과 향의 콘셉트를 물리적 공간에 시각화하는
+                            방식을 보여줍니다.</p>
+                    </div>
+                    <div class="studio-card" data-tag="상품 큐레이션">
+                        <span class="studio-chip" style="background: var(--color-blue); color: #fff; border: none;">상품
+                            큐레이션</span>
+                        <h3 class="studio-name">디앤디파트먼트 서울</h3>
+                        <p class="studio-description">생활 소품과 디자인 상품을 다루는 편집숍. 실용성을 강조한 큐레이션과 타이포그래피, 간결하고 정돈된 상품 디스플레이를
+                            참고할 수 있습니다.</p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="studio-category" data-category="cinema">
+                <section class="studio-grid">
+
+                    <div class="studio-card" data-tag="그래픽 아이덴티티">
+                        <span class="studio-chip" style="background: var(--color-blue); color: #fff; border: none;">그래픽
+                            아이덴티티</span>
+                        <h3 class="studio-name">무비랜드</h3>
+                        <p class="studio-description">자체적인 브랜딩을 전개하는 소규모 독립 영화관. 굿즈, 타이포그래피, 포스터 디자인 등을 아우르는 일관된 공간 브랜딩을
+                            확인할 수 있습니다.</p>
+                    </div>
+
+                    <div class="studio-card" data-tag="콘셉트 브랜딩">
+                        <span class="studio-chip"
+                            style="background: var(--color-orange); color: #fff; border: none;">콘셉트 브랜딩</span>
+                        <h3 class="studio-name">라이카시네마</h3>
+                        <p class="studio-description">우주를 모티프로 디자인된 예술 영화관. 인테리어부터 티켓 디자인에 이르기까지 일관성 있게 적용된 브랜드 스토리텔링을
+                            참고하기 좋습니다.</p>
+                    </div>
+
+
+                    <div class="studio-card" data-tag="시각 미술 서적">
+                        <span class="studio-chip" style="background: var(--color-green); color: #111; border: none;">시각
+                            미술 서적</span>
+                        <h3 class="studio-name">CGV 씨네 라이브러리</h3>
+                        <p class="studio-description">영화 상영관을 개조해 만든 공간으로 영화 관련 서적을 다룹니다. 영화 포스터, 콘티, 시각 미술 설계 자료들을 열람할
+                            수 있습니다.</p>
+                    </div>
+                    <div class="studio-card" data-tag="공간 브랜딩">
+                        <span class="studio-chip" style="background: var(--color-blue); color: #fff; border: none;">공간
+                            브랜딩</span>
+                        <h3 class="studio-name">피크닉 (piknic)</h3>
+                        <p class="studio-description">전시 공간과 식음료, 숍 등이 결합된 복합 문화 공간. 기획 전시와 연계된 패키지 디자인 및 섬세한 공간 브랜딩을
+                            살펴볼 수 있습니다.</p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="studio-category" data-category="material">
+                <section class="studio-grid">
+
+                    <div class="studio-card" data-tag="프린팅 프로세스">
+                        <span class="studio-chip"
+                            style="background: var(--color-purple); color: #fff; border: none;">프린팅 프로세스</span>
+                        <h3 class="studio-name">더페이퍼랩</h3>
+                        <p class="studio-description">다양한 종이의 질감과 인쇄가 적용된 결과물을 확인해 볼 수 있는 공간. 지류의 물성과 평량, 후가공 방식이 디자인에
+                            미치는 영향을 파악하기 좋습니다.</p>
+                    </div>
+
+                    <div class="studio-card" data-tag="소재 텍스처">
+                        <span class="studio-chip" style="background: var(--color-green); color: #111; border: none;">소재
+                            텍스처</span>
+                        <h3 class="studio-name">윤현상재 머티리얼 라이브러리</h3>
+                        <p class="studio-description">다양한 재료의 텍스처와 맵핑 소스를 모아둔 머티리얼 라이브러리. 실제 질감과 소재의 융합을 통한 시각적 변화를 연구할
+                            수 있습니다.</p>
+                    </div>
+
+
+                    <div class="studio-card" data-tag="합정동">
+                        <span class="studio-chip"
+                            style="background: var(--color-yellow); color: #111; border: none;">합정동</span>
+                        <h3 class="studio-name">콩크 (CONC)</h3>
+                        <p class="studio-description">디자이너를 위한 독립 자재 라이브러리. 금속, 아크릴 등 영감을 주는 독특한 물성과 혁신적인 신소재들을 직접 만져볼 수
+                            있습니다.</p>
+                    </div>
+                    <div class="studio-card" data-tag="서초동">
+                        <span class="studio-chip"
+                            style="background: var(--color-orange); color: #fff; border: none;">서초동</span>
+                        <h3 class="studio-name">인더페이퍼 갤러리</h3>
+                        <p class="studio-description">두성종이에서 운영하는 지류 갤러리 랩. 전 세계 수천 종의 종이를 비교하고 출력물의 색감과 인쇄 적성을 파악하기 최적인
+                            공간입니다.</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="nav-back">
+            <button class="btn-text" onclick="location.href='outside.html'">
+                <i class="ph-thin ph-arrow-left"></i>
+                <span>돌아가기</span>
+            </button>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

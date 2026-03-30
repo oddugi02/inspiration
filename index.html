@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영감</title>
+    <meta name="description" content="밖과 안, 어디에서든 영감을 발견하는 공간">
+
+    <!-- Pretendard Font (Thin weights) -->
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+        <header class="header">
+            <h1 class="title">영감은 어디에나 있습니다</h1>
+            <p class="subtitle">오늘 당신은 어디에서 영감을 찾고 싶나요?</p>
+        </header>
+
+        <nav class="actions">
+            <button class="btn btn-outside" id="btn-outside">
+                <i class="ph-thin ph-map-trifold"></i>
+                <span>밖에서 영감얻기</span>
+                <i class="ph-thin ph-caret-right mini-icon"></i>
+            </button>
+            <button class="btn btn-inside" id="btn-inside">
+                <i class="ph-thin ph-house"></i>
+                <span>방구석 영감얻기</span>
+                <i class="ph-thin ph-caret-right mini-icon"></i>
+            </button>
+        </nav>
+
+
+        <!-- [맞춤 추천 임시 비활성화] 
+        <div style="margin-top: 2.5rem; width: 100%; max-width: 100%; display: flex; justify-content: center; animation: fadeIn 1.2s ease-out 0.4s backwards;">
+            <button class="btn" style="width: 100%; display: flex; justify-content: center; align-items: center; gap: 0.6rem; background: linear-gradient(135deg, var(--color-purple), var(--color-blue)); color: white; border: none; box-shadow: 0 10px 25px rgba(139, 49, 255, 0.3); transition: transform 0.2s, box-shadow 0.2s;" onclick="location.href='recommend.html'" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 15px 30px rgba(139, 49, 255, 0.4)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 25px rgba(139, 49, 255, 0.3)';">
+                <i class="ph-fill ph-magic-wand" style="font-size: 1.4rem;"></i>
+                <span style="font-weight: 700; font-size: 1.05rem; letter-spacing: 0.02em;">지금 내게 딱 맞는 영감 찾기</span>
+            </button>
+        </div> 
+        -->
+    </main>
+
+    <footer class="footer">
+        <div class="footer-info">
+            <p>매달 말에 정보가 추가됩니다</p>
+            <p>이번달 업데이트 26-03-31  &nbsp;|&nbsp;  다음 업데이트 26-04-30</p>
+        </div>
+        <p>디자이너를 위한 영감 찾기 사이트</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

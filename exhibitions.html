@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영감 | 전시 탐색</title>
+
+    <!-- Pretendard Font -->
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="nav-top-left">
+        <button class="btn-icon-only" onclick="location.href='outside.html'" title="뒤로가기">
+            <i class="ph-thin ph-arrow-left"></i>
+        </button>
+    </nav>
+
+    <main class="container exhibitions-container">
+        <header class="header-discovery">
+            <div>
+                <h1 class="title">전시 탐색</h1>
+                <p class="subtitle">지금 가장 영감을 주는 서울의 전시들입니다</p>
+            </div>
+
+        </header>
+
+        <!-- Section: Exhibition Discovery Grid -->
+        <section class="exhibition-section">
+            <div class="exhibition-grid">
+                <div class="exhibition-card">
+                    <div class="poster-container">
+                        <img src="images/damien_hirst.png" alt="데이미언 허스트 포스터">
+                    </div>
+                    <div class="info">
+                        <p class="museum">국립현대미술관 서울</p>
+                        <h3 class="exh-title">데이미언 허스트</h3>
+                        <p class="description">삶과 죽음, 아름다움에 대한 인간의 복합적인 감정을 강렬한 시각 언어로 조명하는 전시입니다.</p>
+                        <div class="tags">
+                            <span class="tag"
+                                style="background: var(--color-blue); color: #fff; border: none;">생명</span>
+                            <span class="tag"
+                                style="background: var(--color-orange); color: #fff; border: none;">죽음</span>
+                        </div>
+                        <p class="date">2026-03-20 ~ 2026-06-28</p>
+                    </div>
+                </div>
+
+                <!-- Card 10: 알렉사에게 -->
+
+                <div class="exhibition-card">
+                    <div class="poster-container">
+                        <img src="images/mmca_highlights.png" alt="한국현대미술 하이라이트 포스터">
+                    </div>
+                    <div class="info">
+                        <p class="museum">국립현대미술관 서울</p>
+                        <h3 class="exh-title">한국현대미술 하이라이트</h3>
+                        <p class="description">1960년대부터 현재까지 한국 현대미술의 주요 흐름을 보여주는 대표 소장품 상설전입니다.</p>
+                        <div class="tags">
+                            <span class="tag"
+                                style="background: var(--color-green); color: #111; border: none;">MMCA</span>
+                            <span class="tag"
+                                style="background: var(--color-yellow); color: #111; border: none;">마스터피스</span>
+                        </div>
+                        <p class="date">2025.05.01 ~</p>
+                    </div>
+                </div>
+
+                <!-- Card 15: 렘브란트에서 고야까지 -->
+
+                <div class="exhibition-card">
+                    <div class="poster-container">
+                        <img src="images/tino_sehgal.png" alt="티노 세갈 포스터">
+                    </div>
+                    <div class="info">
+                        <p class="museum">리움미술관</p>
+                        <h3 class="exh-title">티노 세갈</h3>
+                        <p class="description">보이지 않는 것의 미학을 탐구하며 관람객과 작품의 직접적인 관계 맺기를 시도하는 전시입니다.</p>
+                        <div class="tags">
+                            <span class="tag"
+                                style="background: var(--color-blue); color: #fff; border: none;">현대미술</span>
+                            <span class="tag"
+                                style="background: var(--color-orange); color: #fff; border: none;">퍼포먼스</span>
+                        </div>
+                        <p class="date">2026-03-03 ~ 2026-06-28</p>
+                    </div>
+                </div>
+
+                <!-- Card 1: 데이미언 허스트 -->
+
+                <div class="exhibition-card">
+                    <div class="poster-container">
+                        <img src="images/dear_alexa.png" alt="알렉사에게 포스터">
+                    </div>
+                    <div class="info">
+                        <p class="museum">서울시립 미술아카이브</p>
+                        <h3 class="exh-title">《알렉사에게》</h3>
+                        <p class="description">인공지능과 정보 기술의 발전 속에서 지식 탐색 방식과 현실 인식의 변화를 조망하는 전시입니다.</p>
+                        <div class="tags">
+                            <span class="tag"
+                                style="background: var(--color-orange); color: #fff; border: none;">기술</span>
+                            <span class="tag"
+                                style="background: var(--color-purple); color: #fff; border: none;">데이터</span>
+                        </div>
+                        <p class="date">2026.03.26 ~ 2026.07.26</p>
+                    </div>
+                </div>
+
+                <!-- Card 8: 메가트론 랩소디 -->
+
+                <div class="exhibition-card">
+                    <div class="poster-container">
+                        <img src="images/megatron_rhapsody.png" alt="메가트론 랩소디 포스터">
+                    </div>
+                    <div class="info">
+                        <p class="museum">서울시립 백남준을 기억하는 집</p>
+                        <h3 class="exh-title">《메가트론 랩소디》</h3>
+                        <p class="description">백남준의 예술 세계와 미디어 기술의 혁신을 '메가트론' 개념을 통해 새롭게 조명하는 상설전입니다.</p>
+                        <div class="tags">
+                            <span class="tag"
+                                style="background: var(--color-yellow); color: #111; border: none;">백남준</span>
+                            <span class="tag"
+                                style="background: var(--color-blue); color: #fff; border: none;">상설</span>
+                        </div>
+                        <p class="date">상시 전시</p>
+                    </div>
+                </div>
+
+                <!-- Card 5: 지구울림 헤르츠앤도우 -->
+
+                <div class="exhibition-card">
+                    <div class="poster-container">
+                        <img src="images/sema_earth.png" alt="지구울림 헤르츠앤도우 포스터">
+                    </div>
+                    <div class="info">
+                        <p class="museum">서울시립 북서울미술관</p>
+                        <h3 class="exh-title">지구울림 — 헤르츠앤도우</h3>
+                        <p class="description">행성적 차원의 듣기를 통해 지구가 품은 다양한 소리의 층위와 울림을 경험하는 사운드 전시입니다.</p>
+                        <div class="tags">
+                            <span class="tag"
+                                style="background: var(--color-green); color: #111; border: none;">사운드아트</span>
+                            <span class="tag"
+                                style="background: var(--color-yellow); color: #111; border: none;">리서치</span>
+                        </div>
+                        <p class="date">2025-09-02 ~ 2026-05-31</p>
+                    </div>
+                </div>
+
+                <!-- Card 7: 크리스찬 히다카 -->
+
+                <div class="exhibition-card">
+                    <div class="poster-container">
+                        <img src="images/christian_hidaka.png" alt="크리스찬 히다카 포스터">
+                    </div>
+                    <div class="info">
+                        <p class="museum">서울시립 북서울미술관</p>
+                        <h3 class="exh-title">크리스찬 히다카: 하늘이 극장이 되고...</h3>
+                        <p class="description">동서양 회화사를 아우르는 초문화주의적 관점으로 이미지와 기억의 극장을 구현한 대형 벽화 전시입니다.</p>
+                        <div class="tags">
+                            <span class="tag"
+                                style="background: var(--color-purple); color: #fff; border: none;">회화</span>
+                            <span class="tag"
+                                style="background: var(--color-green); color: #111; border: none;">벽화</span>
+                        </div>
+                        <p class="date">2025.06.05 ~ 2026.05.10</p>
+                    </div>
+                </div>
+
+                <!-- Card 2: SeMA 퍼포먼스 호흡 -->
+
+                <div class="exhibition-card">
+                    <div class="poster-container">
+                        <img src="images/sema_breathing.png" alt="SeMA 퍼포먼스 호흡 포스터">
+                    </div>
+                    <div class="info">
+                        <p class="museum">서울시립 서서울미술관</p>
+                        <h3 class="exh-title">SeMA 퍼포먼스 《호흡》</h3>
+                        <p class="description">신체, 사회, 예술의 교차점을 '호흡'이라는 주제로 탐구하며 새로운 예술적 실험을 선보이는 개관 특별전입니다.</p>
+                        <div class="tags">
+                            <span class="tag"
+                                style="background: var(--color-purple); color: #fff; border: none;">개관전</span>
+                            <span class="tag"
+                                style="background: var(--color-green); color: #111; border: none;">뉴미디어</span>
+                        </div>
+                        <p class="date">2026-03-12 ~ 2026-04-12</p>
+                    </div>
+                </div>
+
+                <!-- Card 3: SeMA 프로젝트V 얄루 -->
+
+                <div class="exhibition-card">
+                    <div class="poster-container">
+                        <img src="images/sema_yaloo.png" alt="SeMA 프로젝트V 얄루 포스터">
+                    </div>
+                    <div class="info">
+                        <p class="museum">서울시립 서서울미술관</p>
+                        <h3 class="exh-title">SeMA 프로젝트V_얄루</h3>
+                        <p class="description">메타휴먼 캐릭터 '신인호'를 통해 도시의 기억과 미래 기술이 교차하는 실험적인 미디어 아트를 제안합니다.</p>
+                        <div class="tags">
+                            <span class="tag"
+                                style="background: var(--color-yellow); color: #111; border: none;">얄루</span>
+                            <span class="tag"
+                                style="background: var(--color-blue); color: #fff; border: none;">메타휴먼</span>
+                        </div>
+                        <p class="date">2026-03-12 ~ 2026-06-07</p>
+                    </div>
+                </div>
+
+                <!-- Card 4: 최재은 약속 -->
+
+                <div class="exhibition-card">
+                    <div class="poster-container">
+                        <img src="images/sema_promise.png" alt="최재은 약속 포스터">
+                    </div>
+                    <div class="info">
+                        <p class="museum">서울시립미술관 서소문본관</p>
+                        <h3 class="exh-title">《최재은: 약속》</h3>
+                        <p class="description">문명과 자연의 공존을 향한 '공생지약'을 주제로 다층적 시공간 속 생명의 가치를 조명하는 개인전입니다.</p>
+                        <div class="tags">
+                            <span class="tag"
+                                style="background: var(--color-orange); color: #fff; border: none;">공생</span>
+                            <span class="tag"
+                                style="background: var(--color-purple); color: #fff; border: none;">생태</span>
+                        </div>
+                        <p class="date">2025-12-23 ~ 2026-04-05</p>
+                    </div>
+                </div>
+
+                <!-- Card 6: 영원히 교차하는 춤 -->
+
+                <div class="exhibition-card">
+                    <div class="poster-container">
+                        <img src="images/sema_dance.png" alt="영원히 교차하는 춤 포스터">
+                    </div>
+                    <div class="info">
+                        <p class="museum">서울시립미술관 서소문본관</p>
+                        <h3 class="exh-title">영원히 교차하는 춤</h3>
+                        <p class="description">에르네스토 네토의 몰입형 설치를 통해 자연과 사회, 감각과 사유의 긴장과 상호작용을 탐구합니다.</p>
+                        <div class="tags">
+                            <span class="tag"
+                                style="background: var(--color-blue); color: #fff; border: none;">몰입형</span>
+                            <span class="tag"
+                                style="background: var(--color-orange); color: #fff; border: none;">설치</span>
+                        </div>
+                        <p class="date">2025-08-13 ~ 2026-12-31</p>
+                    </div>
+                </div>
+
+                <!-- Card 19: LIFE IS BUBBLE (NEW) -->
+
+                <div class="exhibition-card">
+                    <div class="poster-container">
+                        <img src="images/life_is_bubble.jpg" alt="LIFE IS BUBBLE 포스터">
+                    </div>
+                    <div class="info">
+                        <p class="museum">석파정 서울 미술관</p>
+                        <h3 class="exh-title">LIFE IS BUBBLE : 숲속에 피어나다</h3>
+                        <p class="description">비눗방울처럼 덧없지만 찬란하게 빛나는 생명의 순간들을 조각적 언어로 포착한 오동훈 작가의 개인전입니다.</p>
+                        <div class="tags">
+                            <span class="tag"
+                                style="background: var(--color-yellow); color: #111; border: none;">오동훈</span>
+                            <span class="tag"
+                                style="background: var(--color-blue); color: #fff; border: none;">조각</span>
+                            <span class="tag"
+                                style="background: var(--color-orange); color: #fff; border: none;">생명</span>
+                        </div>
+                        <p class="date">2026.03.20 ~ 2026.08.17</p>
+                    </div>
+                </div>
+
+                <!-- Card 20: extraordinary (NEW) -->
+
+                <div class="exhibition-card">
+                    <div class="poster-container">
+                        <img src="images/extraordinary.png" alt="extraordinary 포스터">
+                    </div>
+                    <div class="info">
+                        <p class="museum">석파정 서울 미술관</p>
+                        <h3 class="exh-title">extraordinary : 시간이 쌓이는 순간</h3>
+                        <p class="description">일상의 평범함 속에서 비상한 순간을 발견하는 한국 근현대 미술 거장들의 마스터피스 전시입니다.</p>
+                        <div class="tags">
+                            <span class="tag"
+                                style="background: var(--color-purple); color: #fff; border: none;">마스터피스</span>
+                            <span class="tag"
+                                style="background: var(--color-green); color: #111; border: none;">거장</span>
+                            <span class="tag"
+                                style="background: var(--color-yellow); color: #111; border: none;">박서보</span>
+                        </div>
+                        <p class="date">2026.03.20 ~ 2026.08.17</p>
+                    </div>
+                </div>
+
+                <!-- Card 16: 투명한 손, 움직이는 색 (NEW) -->
+
+                <div class="exhibition-card">
+                    <div class="poster-container">
+                        <img src="images/sehwa_hands.png" alt="투명한 손, 움직이는 색 포스터">
+                    </div>
+                    <div class="info">
+                        <p class="museum">세화미술관</p>
+                        <h3 class="exh-title">투명한 손, 움직이는 색</h3>
+                        <p class="description">현대인의 삶 속에 숨겨진 다양한 형태의 '노동'과 그 너머의 가치를 예술가의 시각으로 재해석한 기획전입니다.</p>
+                        <div class="tags">
+                            <span class="tag"
+                                style="background: var(--color-green); color: #111; border: none;">노동</span>
+                            <span class="tag"
+                                style="background: var(--color-yellow); color: #111; border: none;">가치</span>
+                            <span class="tag"
+                                style="background: var(--color-blue); color: #fff; border: none;">동시대미술</span>
+                        </div>
+                        <p class="date">2026.03.26 ~ 06.28</p>
+                    </div>
+                </div>
+
+                <!-- Card 17: 기억의 실루엣 (NEW) -->
+
+                <div class="exhibition-card">
+                    <div class="poster-container">
+                        <img src="images/sehwa_silhouette.png" alt="기억의 실루엣 포스터">
+                    </div>
+                    <div class="info">
+                        <p class="museum">세화미술관</p>
+                        <h3 class="exh-title">기억의 실루엣: 형태, 이미지, 관점</h3>
+                        <p class="description">시간 속에 희미해진 기억의 파편들을 형태와 이미지로 복원하며 새로운 관점을 제안하는 전시입니다.</p>
+                        <div class="tags">
+                            <span class="tag"
+                                style="background: var(--color-orange); color: #fff; border: none;">기억</span>
+                            <span class="tag"
+                                style="background: var(--color-purple); color: #fff; border: none;">복원</span>
+                            <span class="tag"
+                                style="background: var(--color-green); color: #111; border: none;">관점</span>
+                        </div>
+                        <p class="date">2026.03.26 ~ 06.28</p>
+                    </div>
+                </div>
+
+                <!-- Card 13: 스펙트로신테시스 서울 -->
+
+                <div class="exhibition-card">
+                    <div class="poster-container">
+                        <img src="images/spectrosynthesis.png" alt="스펙트로신테시스 서울 포스터">
+                    </div>
+                    <div class="info">
+                        <p class="museum">아트선재센터</p>
+                        <h3 class="exh-title">스펙트로신테시스 서울</h3>
+                        <p class="description">아시아 현대 미술의 역동성을 바탕으로 다양성과 포용성에 대한 질문을 던지는 기획전입니다.</p>
+                        <div class="tags">
+                            <span class="tag"
+                                style="background: var(--color-purple); color: #fff; border: none;">역동</span>
+                            <span class="tag"
+                                style="background: var(--color-green); color: #111; border: none;">다양성</span>
+                        </div>
+                        <p class="date">2026-03-20 ~ 2026-06-28</p>
+                    </div>
+                </div>
+
+                <!-- Card 14: 인상파의 밤 -->
+
+                <div class="exhibition-card">
+                    <div class="poster-container">
+                        <img src="images/impressionist_night.png" alt="인상파의 밤 포스터">
+                    </div>
+                    <div class="info">
+                        <p class="museum">용산전쟁기념관</p>
+                        <h3 class="exh-title">인상파의 밤: 파리 1874</h3>
+                        <p class="description">인상주의 150주년을 기념하여 빛의 예술가들이 보여준 혁신을 미디어 아트로 재해석한 전시입니다.</p>
+                        <div class="tags">
+                            <span class="tag"
+                                style="background: var(--color-yellow); color: #111; border: none;">인상주의</span>
+                            <span class="tag"
+                                style="background: var(--color-blue); color: #fff; border: none;">미디어</span>
+                        </div>
+                        <p class="date">2026-03-17 ~ 2026-06-30</p>
+                    </div>
+                </div>
+
+                <div class="exhibition-card">
+                    <div class="poster-container">
+                        <img src="images/rembrandt_to_goya.png" alt="렘브란트에서 고야까지 포스터">
+                    </div>
+                    <div class="info">
+                        <p class="museum">더현대서울 ALT.1</p>
+                        <h3 class="exh-title">렘브란트에서 고야까지</h3>
+                        <p class="description">서양 미술사의 황금기를 장식한 거장들의 원화를 통해 고전 미술의 깊이를 선사합니다.</p>
+                        <div class="tags">
+                            <span class="tag"
+                                style="background: var(--color-orange); color: #fff; border: none;">거장</span>
+                            <span class="tag"
+                                style="background: var(--color-purple); color: #fff; border: none;">고전회화</span>
+                        </div>
+                        <p class="date">2026-03-21 ~ 2026-06-29</p>
+                    </div>
+                </div>
+
+                <!-- Card 12: 티노 세갈 -->
+</div>
+        </section>
+
+        <div class="nav-back">
+            <button class="btn-text" onclick="location.href='outside.html'">
+                <i class="ph-thin ph-arrow-left"></i>
+                <span>돌아가기</span>
+            </button>
+        </div>
+    </main>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

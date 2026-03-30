@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영감 | 디자인 도서 아카이브 (v2)</title>
+
+    <!-- Pretendard Font -->
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="nav-top-left">
+        <button class="btn-icon-only" onclick="location.href='outside.html'" title="뒤로가기">
+            <i class="ph-thin ph-arrow-left"></i>
+        </button>
+    </nav>
+
+    <main class="container books-container">
+        <header class="header-discovery">
+            <div>
+                <h1 class="title">디자인 도서 아카이브</h1>
+                <p class="subtitle">시대를 초월한 지혜와 영감을 주는 필독서 리스트</p>
+                <div style="margin-top: 1rem;">
+                    <span class="library-tag" style="margin-top: 0;"><i class="ph-fill ph-books"></i> 전권 성곡도서관 보유</span>
+                </div>
+            </div>
+        </header>
+        <div class="filter-chip-container" style="margin-bottom: 3rem;">
+            <button class="filter-chip active" data-filter="all">
+                <i class="ph-thin ph-squares-four"></i>전체
+            </button>
+            <button class="filter-chip" data-filter="typo">
+                <i class="ph-thin ph-text-aa"></i>타이포그래피
+            </button>
+            <button class="filter-chip" data-filter="graphic">
+                <i class="ph-thin ph-pen-nib"></i>그래픽
+            </button>
+            <button class="filter-chip" data-filter="branding">
+                <i class="ph-thin ph-lightbulb"></i>기획/브랜딩
+            </button>
+            <button class="filter-chip" data-filter="theory">
+                <i class="ph-thin ph-bank"></i>역사/이론
+            </button>
+            <button class="filter-chip" data-filter="thinking">
+                <i class="ph-thin ph-brain"></i>사고/철학
+            </button>
+            <button class="filter-chip" data-filter="interaction">
+                <i class="ph-thin ph-cursor-click"></i>인터랙션
+            </button>
+            <button class="filter-chip" data-filter="visual">
+                <i class="ph-thin ph-palette"></i>색채/조형
+            </button>
+            <button class="filter-chip" data-filter="career">
+                <i class="ph-thin ph-briefcase"></i>실무/커리어
+            </button>
+            <button class="filter-chip" data-filter="professor">
+                <i class="ph-thin ph-star"></i>교수님 추천
+            </button>
+        </div>
+
+        <!-- Category: 타이포그래피 -->
+        <section class="book-category-section category-section" data-category="typo">
+            <div class="book-list-container expanded">
+                <div class="book-list">
+                    <div class="book-card">
+                        <div class="book-meta">
+                            <span class="studio-chip"
+                                style="background: var(--color-green); color: #111; border: none; margin-bottom: 0.5rem; display: inline-block;">로버트
+                                브링허스트</span>
+                            <h3 class="book-title">타이포그래피의 원리</h3>
+                        </div>
+                        <div class="book-content">
+                            <p class="book-fact">전 세계 디자인 스쿨에서 '타이포그래피의 성경'으로 통하며, 서체의 해부학적 구조와 역사적 맥락을 다룬 가장 권위 있는
+                                저서입니다.</p>
+                            <div class="book-location">
+                                <i class="ph-thin ph-map-pin"></i>
+                                <span>4층(디자인도서실) | D741.6 브239ㅌ4</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="book-card">
+                        <div class="book-meta">
+                            <span class="studio-chip"
+                                style="background: var(--color-orange); color: #fff; border: none; margin-bottom: 0.5rem; display: inline-block;">에밀
+                                루더</span>
+                            <h3 class="book-title">타이포그래피</h3>
+                        </div>
+                        <div class="book-content">
+                            <p class="book-fact">글꼴 디자인과 타이포그래피의 거장 에밀 루더가 평생을 정리한 디자인 지침서로, 활자의 배열과 리듬에 관한 본질적인 감각을
+                                일깨워줍니다.</p>
+                            <div class="book-location">
+                                <i class="ph-thin ph-map-pin"></i>
+                                <span>3층(기술과학도서실) | 686.22 루223ㅌ2</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="book-card">
+                        <div class="book-meta">
+                            <span class="studio-chip"
+                                style="background: var(--color-purple); color: #fff; border: none; margin-bottom: 0.5rem; display: inline-block;">안상수
+                                외 2인</span>
+                            <h3 class="book-title">한글 디자인 교과서</h3>
+                        </div>
+                        <div class="book-content">
+                            <p class="book-fact">한국 타이포그래피의 거장이 집필하여 한글의 구조적 원리와 디자인 프로세스를 학문적으로 정립한 독보적인 도서입니다.</p>
+                            <div class="book-location">
+                                <i class="ph-thin ph-map-pin"></i>
+                                <span>4층(디자인도서실) | D 745.61 한51ㅎ</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="book-card">
+                        <div class="book-meta">
+                            <span class="studio-chip"
+                                style="background: var(--color-yellow); color: #111; border: none; margin-bottom: 0.5rem; display: inline-block;">요스트
+                                호훌리</span>
+                            <h3 class="book-title">마이크로 타이포그래피</h3>
+                        </div>
+                        <div class="book-content">
+                            <p class="book-fact">가독성과 정통성을 지키는 아주 미세한 조판 원칙들을 엄격하고 집요하게 다룹니다. 글자 사이의 간격, 여백, 행간의 완벽한 조화를
+                                위한 마이크로 레벨의 지혜가 담겨 있습니다.</p>
+                            <div class="book-location">
+                                <i class="ph-thin ph-map-pin"></i>
+                                <span>4층(디자인도서실) | D 741.6 호97ㅁ2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category: 그래픽 -->
+        <section class="book-category-section category-section" data-category="graphic">
+
+            <div class="book-list-container expanded">
+                <div class="book-list">
+                    <div class="book-card">
+                        <div class="book-meta">
+                            <span class="studio-chip"
+                                style="background: var(--color-blue); color: #fff; border: none; margin-bottom: 0.5rem; display: inline-block;">데이비드
+                                크로우</span>
+                            <h3 class="book-title">보이는 기호학</h3>
+                        </div>
+                        <div class="book-content">
+                            <p class="book-fact">시각적 기호가 어떻게 의미를 생성하고 전달하는지 다룬 디자인 기호학의 필독서입니다. 점, 선, 면 등 기본적인 조형 요소부터
+                                복잡한 시각 언어까지 풍부한 사례로 분석합니다.</p>
+                            <div class="book-location">
+                                <i class="ph-thin ph-map-pin"></i>
+                                <span>3층(사회과학도서실) | 302.2 크235ㅂ3</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-meta">
+                            <span class="studio-chip"
+                                style="background: var(--color-green); color: #111; border: none; margin-bottom: 0.5rem; display: inline-block;">요제프
+                                뮐러 브로크만</span>
+                            <h3 class="book-title">(디자이너를 위한) 그리드 시스템</h3>
+                        </div>
+                        <div class="book-content">
+                            <p class="book-fact">'스위스 스타일'의 창시자가 쓴 책으로, 모든 시각 디자인의 보이지 않는 질서를 만든 전설적인 저서입니다.</p>
+                            <div class="book-location">
+                                <i class="ph-thin ph-map-pin"></i>
+                                <span>4층(디자인도서실) | D 741.6 뮐233ㄱ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-meta">
+                            <span class="studio-chip"
+                                style="background: var(--color-purple); color: #fff; border: none; margin-bottom: 0.5rem; display: inline-block;">베스
+                                톤드로우</span>
+                            <h3 class="book-title">레이아웃 불변의 법칙 100가지</h3>
+                        </div>
+                        <div class="book-content">
+                            <p class="book-fact">(2020년 개정판) 그리드 활용의 100가지 핵심 원칙을 사전식으로 정리하여, 레이아웃의 기초 체력을 가장 쉽고 빠르게
+                                길러주는 디자인 실전
+                                바이블입니다.</p>
+                            <div class="book-location">
+                                <i class="ph-thin ph-map-pin"></i>
+                                <span>3층(기술과학도서실) | 686.2252 톤228ㄹ2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-meta">
+                            <span class="studio-chip"
+                                style="background: var(--color-blue); color: #fff; border: none; margin-bottom: 0.5rem; display: inline-block;">킴벌리
+                                일람</span>
+                            <h3 class="book-title">디자인 기하학</h3>
+                        </div>
+                        <div class="book-content">
+                            <p class="book-fact">자연과 예술 속 황금비율이 디자인에 어떻게 적용되는지 수학적으로 증명한 조형의 명저입니다.</p>
+                            <div class="book-location">
+                                <i class="ph-thin ph-map-pin"></i>
+                                <span>4층(디자인도서실) | D 745.2 생111 v.2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-meta">
+                            <span class="studio-chip"
+                                style="background: var(--color-orange); color: #fff; border: none; margin-bottom: 0.5rem; display: inline-block;">크리스찬
+                                레보그</span>
+                            <h3 class="book-title">비주얼 그래머</h3>
+                        </div>
+                        <div class="book-content">
+                            <p class="book-fact">디자인 언어를 사전처럼 정리하여 점·선·면의 상호작용을 가장 체계적으로 분석했다는 평가를 받습니다.</p>
+                            <div class="book-location">
+                                <i class="ph-thin ph-map-pin"></i>
+                                <span>4층(디자인도서실) | D 701.8 르45ㅂ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-meta">
+                            <span class="studio-chip"
+                                style="background: var(--color-yellow); color: #111; border: none; margin-bottom: 0.5rem; display: inline-block;">엘렌
+                                럽튼</span>
+                            <h3 class="book-title">그래픽 디자인: 새로운 기초</h3>
+                        </div>
+                        <div class="book-content">
+                            <p class="book-fact">전통적인 디자인 원리를 현대적 비주얼 메이킹 기법에 접목한 최상급 디자인 스쿨의 핵심 교재입니다.</p>
+                            <div class="book-location">
+                                <i class="ph-thin ph-map-pin"></i>
+                                <span>4층(디자인도서실) | D 741.6 럽838ㄱ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category: 기획/브랜딩 -->
+        <section class="book-category-section category-section" data-category="branding">
+            <div class="book-list-container expanded">
+                <div class="book-list">
+                    <div class="book-card">
+                        <div class="book-meta">
+                            <span class="studio-chip"
+                                style="background: var(--color-green); color: #111; border: none; margin-bottom: 0.5rem; display: inline-block;">알리나
+                                휠러</span>
+                            <h3 class="book-title">디자이닝 브랜드 아이덴티티</h3>
+                        </div>
+                        <div class="book-content">
+                            <p class="book-fact">(2016년 개정판)글로벌 브랜드 컨설팅 펌에서 신입 사원 교육용으로 사용하는 브랜딩 프로세스의 정석입니다.</p>
+                            <div class="book-location">
+                                <i class="ph-thin ph-map-pin"></i>
+                                <span>3층(사회과학도서실) | 658.827 휠233ㄷ4</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-meta">
+                            <span class="studio-chip"
+                                style="background: var(--color-purple); color: #fff; border: none; margin-bottom: 0.5rem; display: inline-block;">데이비드
+                                아이리</span>
+                            <h3 class="book-title">로고 디자인 러브</h3>
+                        </div>
+                        <div class="book-content">
+                            <p class="book-fact">아마존 디자인 분야 장기 베스트셀러로, 로고를 넘어 브랜드의 영혼을 설계하는 법을 다룹니다.</p>
+                            <div class="book-location">
+                                <i class="ph-thin ph-map-pin"></i>
+                                <span>4층(디자인도서실) | D 741.6 에63ㄹ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-meta">
+                            <span class="studio-chip"
+                                style="background: var(--color-blue); color: #fff; border: none; margin-bottom: 0.5rem; display: inline-block;">마티
+                                뉴마이어</span>
+                            <h3 class="book-title">브랜드 갭</h3>
+                        </div>
+                        <div class="book-content">
+                            <p class="book-fact">디자인과 비즈니스 전략을 연결하는 브릿지 역할을 하며 기획자들 사이에서도 필독서로 꼽힙니다.</p>
+                            <div class="book-location">
+                                <i class="ph-thin ph-map-pin"></i>
+                                <span>3층(사회과학도서실) | 658.827 뉴31ㅂ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-meta">
+                            <span class="studio-chip"
+                                style="background: var(--color-green); color: #111; border: none; margin-bottom: 0.5rem; display: inline-block;">케빈
+                                켈러</span>
+                            <h3 class="book-title">전략적 브랜드 관리</h3>
+                        </div>
+                        <div class="book-content">
+                            <p class="book-fact">'브랜드 자산(Brand Equity)' 개념을 정립한 마케팅 및 디자인 통합 이론의 최고 권위서입니다.</p>
+                            <div class="book-location">
+                                <i class="ph-thin ph-map-pin"></i>
+                                <span>3층(사회과학도서실) | 658.827 켈233ㅈ5</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-meta">
+                            <span class="studio-chip"
+                                style="background: var(--color-orange); color: #fff; border: none; margin-bottom: 0.5rem; display: inline-block;">캐서린
+                                슬레이드-브루킹</span>
+                            <h3 class="book-title">브랜드 디자인</h3>
+                        </div>
+                        <div class="book-content">
+                            <p class="book-fact">브랜드 런칭의 전 과정을 단계별 실무 가이드로 정리한 책입니다. 디자인 리서치부터 컨셉 도출, 비주얼 시스템 구축까지의 과정을
+                                군더더기 없이 보여주는 브랜딩의 실전 바이블입니다.</p>
+                            <div class="book-location">
+                                <i class="ph-thin ph-map-pin"></i>
+                                <span>3층(사회과학도서실) | 658.827 슬233ㅂ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category: 디자인 역사&이론 -->
+        <section class="book-category-section category-section" data-category="theory">
+            <div class="book-list-container expanded">
+                <div class="book-list">
+                    <div class="book-card">
+                        <div class="book-meta">
+                            <span class="studio-chip"
+                                style="background: var(--color-yellow); color: #111; border: none; margin-bottom: 0.5rem; display: inline-block;">필립
+                                메그스</span>
+                            <h3 class="book-title">그래픽 디자인의 역사</h3>
+                        </div>
+                        <div class="book-content">
+                            <p class="book-fact">(2011년 개정판) 전 세계 모든 디자인학과에서 배우는 표준 역사서로, 디자인의 기원을 정리한 가장 방대한 아카이브입니다.
+                            </p>
+                            <div class="book-location">
+                                <i class="ph-thin ph-map-pin"></i>
+                                <span>4층(디자인도서실) | D 741.609 멕58ㄱ3</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-meta">
+                            <span class="studio-chip"
+                                style="background: var(--color-orange); color: #fff; border: none; margin-bottom: 0.5rem; display: inline-block;">존
+                                버거</span>
+                            <h3 class="book-title">다른 방식으로 보기</h3>
+                        </div>
+                        <div class="book-content">
+                            <p class="book-fact">BBC 다큐멘터리를 바탕으로 이미지가 권력과 사회를 어떻게 반영하는지 가르치는 비평의 바이블입니다.</p>
+                            <div class="book-location">
+                                <i class="ph-thin ph-map-pin"></i>
+                                <span>4층(디자인도서실) | D 759.94 다238</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-meta">
+                            <span class="studio-chip"
+                                style="background: var(--color-blue); color: #fff; border: none; margin-bottom: 0.5rem; display: inline-block;">폴
+                                랜드</span>
+                            <h3 class="book-title">폴 랜드의 디자인 생각</h3>
+                        </div>
+                        <div class="book-content">
+                            <p class="book-fact">현대 CI 디자인의 대부 폴 랜드가 디자인 작업에서 '좋은 생각'을 이끌어내는 과정을 기록한 살아있는 디자인 철학서입니다.
+                            </p>
+                            <div class="book-location">
+                                <i class="ph-thin ph-map-pin"></i>
+                                <span>4층(디자인도서실) | D 741.6 랜228ㅍ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-meta">
+                            <span class="studio-chip"
+                                style="background: var(--color-yellow); color: #111; border: none; margin-bottom: 0.5rem; display: inline-block;">김경용</span>
+                            <h3 class="book-title">기호학이란 무엇인가</h3>
+                        </div>
+                        <div class="book-content">
+                            <p class="book-fact">기호학을 디자인에 접목하여 시각 기호의 의미 분석을 체계화한 국내 이론의 최고 스테디셀러입니다.</p>
+                            <div class="book-location">
+                                <i class="ph-thin ph-map-pin"></i>
+                                <span>2층(인문과학도서실) | 401.9 김14ㄱ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-meta">
+                            <span class="studio-chip"
+                                style="background: var(--color-green); color: #111; border: none; margin-bottom: 0.5rem; display: inline-block;">헬렌
+                                암스트롱</span>
+                            <h3 class="book-title">그래픽 디자인 이론</h3>
+                        </div>
+                        <div class="book-content">
+                            <p class="book-fact">(이지원 교수님이 번역하신 책) 얀 치홀트부터 폴 랜드까지, 디자인 역사를 바꾼 거장들의 선언문과 에세이를 집대성한 책입니다.
+                                디자인의 조형적 결과물 뒤에
+                                숨겨진
+                                철학적 흐름을 파악하기 위한 전공자들의 필독 이론서입니다.</p>
+                            <div class="book-location">
+                                <i class="ph-thin ph-map-pin"></i>
+                                <span>4층(디자인도서실) | D741.6 암58ㄱ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Category: 인터랙션 -->
+        <section class="book-category-section category-section" data-category="interaction">
+            <div class="book-list-container expanded">
+                <div class="book-list">
+                    <div class="book-card">
+                        <div class="book-meta">
+                            <span class="studio-chip"
+                                style="background: var(--color-purple); color: #fff; border: none; margin-bottom: 0.5rem; display: inline-block;">수잔
+                                웨인셴크</span>
+                            <h3 class="book-title">사람에 대한 100가지 사실</h3>
+                        </div>
+                        <div class="book-content">
+                            <p class="book-fact">(2021년 개정판)사람이 정보를 인지하고 결정하는 심리학적 원리 100가지를 디자인 실무에 바로 적용할 수 있게 정리했습니다.
+                                UX 디자인의
+                                과학적 근거를 마련해 주는 필독서입니다.</p>
+                            <div class="book-location">
+                                <i class="ph-thin ph-map-pin"></i>
+                                <span>4층(디자인도서실) | D 745.4 웨69ㅅ2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-meta">
+                            <span class="studio-chip"
+                                style="background: var(--color-blue); color: #fff; border: none; margin-bottom: 0.5rem; display: inline-block;">스티브
+                                크루그</span>
+                            <h3 class="book-title">(사용자를) 생각하게 하지 마!</h3>
+                        </div>
+                        <div class="book-content">
+                            <p class="book-fact">웹/앱 사용성의 '제1원칙'을 만든 책으로, 전 세계 모든 기획자와 개발자의 공통 필독서입니다.</p>
+                            <div class="book-location">
+                                <i class="ph-thin ph-map-pin"></i>
+                                <span>3층(기술과학도서실) | 005.437 크237ㅅ3</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-meta">
+                            <span class="studio-chip"
+                                style="background: var(--color-yellow); color: #111; border: none; margin-bottom: 0.5rem; display: inline-block;">케이시
+                                리아스</span>
+                            <h3 class="book-title">Form+Code</h3>
+                        </div>
+                        <div class="book-content">
+                            <p class="book-fact">프로세싱(Processing) 창시자가 집필하여 코딩을 디자인 도구로 승격시킨 생성 예술의 원류입니다.</p>
+                            <div class="book-location">
+                                <i class="ph-thin ph-map-pin"></i>
+                                <span>3층(기술과학도서실) | 005.1 리78ㅍ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-meta">
+                            <span class="studio-chip"
+                                style="background: var(--color-green); color: #111; border: none; margin-bottom: 0.5rem; display: inline-block;">앨런
+                                쿠퍼</span>
+                            <h3 class="book-title">(퍼소나로 완성하는) 인터랙션 디자인</h3>
+                        </div>
+                        <div class="book-content">
+                            <p class="book-fact">인터랙션 디자인의 아버지가 쓴 책으로, 사용자 중심 디자인(UCD) 프레임워크를 만든 고전입니다.</p>
+                            <div class="book-location">
+                                <i class="ph-thin ph-map-pin"></i>
+                                <span>3층(기술과학도서실) | 004.019 쿠843ㅇ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-meta">
+                            <span class="studio-chip"
+                                style="background: var(--color-purple); color: #fff; border: none; margin-bottom: 0.5rem; display: inline-block;">도널드
+                                노먼</span>
+                            <h3 class="book-title">디자인과 인간 심리</h3>
+                        </div>
+                        <div class="book-content">
+                            <p class="book-fact">어포던스(Affordance)와 기표(Signifier) 등 현대 UX 디자인의 핵심 용어를 탄생시킨 바이블입니다. 사용자의
+                                실수를 유발하지 않는 '좋은 디자인'의 심리학적 근거를 가장 명쾌하게 설명합니다.</p>
+                            <div class="book-location">
+                                <i class="ph-thin ph-map-pin"></i>
+                                <span>4층(디자인도서실) | D 745.2 노33ㄷ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category: 색채&비주얼문법 -->
+        <section class="book-category-section category-section" data-category="visual">
+            <div class="book-list-container expanded">
+                <div class="book-list">
+                    <div class="book-card">
+                        <div class="book-meta">
+                            <span class="studio-chip"
+                                style="background: var(--color-orange); color: #fff; border: none; margin-bottom: 0.5rem; display: inline-block;">요제프
+                                알버스</span>
+                            <h3 class="book-title">색채의 상호작용</h3>
+                        </div>
+                        <div class="book-content">
+                            <p class="book-fact">예일 대학교의 전설적인 강의를 담은 책으로, 색의 상대적 지각 원리를 정립한 현대 색채학의 근본입니다.</p>
+                            <div class="book-location">
+                                <i class="ph-thin ph-map-pin"></i>
+                                <span>4층(디자인도서실) | D 701.85 알43ㅅ2</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="book-card">
+                        <div class="book-meta">
+                            <span class="studio-chip"
+                                style="background: var(--color-orange); color: #fff; border: none; margin-bottom: 0.5rem; display: inline-block;">루돌프
+                                아른하임</span>
+                            <h3 class="book-title">시각적사고</h3>
+                        </div>
+                        <div class="book-content">
+                            <p class="book-fact">게슈탈트 심리학을 시각 예술에 적용하여 형태 인지의 과학적 원리를 설명하는 명저입니다.</p>
+                            <div class="book-location">
+                                <i class="ph-thin ph-map-pin"></i>
+                                <span>4층(디자인도서실) | D 701.15 아238ㅅ2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-meta">
+                            <span class="studio-chip"
+                                style="background: var(--color-blue); color: #fff; border: none; margin-bottom: 0.5rem; display: inline-block;">션
+                                애덤스</span>
+                            <h3 class="book-title">디자인을 위한 컬러 사전</h3>
+                        </div>
+                        <div class="book-content">
+                            <p class="book-fact">실무에서 즉시 활용 가능한 배색 전략과 사례를 풍부하게 담은 현대 디자이너의 실무 가이드입니다.</p>
+                            <div class="book-location">
+                                <i class="ph-thin ph-map-pin"></i>
+                                <span>4층(디자인도서실) | D 701.85 애223ㄷ</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Category: 디자인 사고 & 철학 -->
+        <section class="book-category-section category-section" data-category="thinking">
+            <div class="book-list-container expanded">
+                <div class="book-list">
+                    <div class="book-card">
+                        <div class="book-meta">
+                            <span class="studio-chip"
+                                style="background: var(--color-green); color: #111; border: none; margin-bottom: 0.5rem; display: inline-block;">하라
+                                켄야</span>
+                            <h3 class="book-title">디자인의 디자인</h3>
+                        </div>
+                        <div class="book-content">
+                            <p class="book-fact">(2017년 개정판) 무인양품(MUJI)의 철학을 완성하며 디자인을 '낯설게 보기'로 재정의한 21세기 가장 영향력 있는
+                                도서입니다.</p>
+                            <div class="book-location">
+                                <i class="ph-thin ph-map-pin"></i>
+                                <span>4층(디자인도서실) | D 745.2 원64ㄷ3</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-meta">
+                            <span class="studio-chip"
+                                style="background: var(--color-purple); color: #fff; border: none; margin-bottom: 0.5rem; display: inline-block;">빅터
+                                파파넥</span>
+                            <h3 class="book-title">인간을 위한 디자인</h3>
+                        </div>
+                        <div class="book-content">
+                            <p class="book-fact">지속 가능성과 디자이너의 사회적 책임을 최초로 제안한 디자인 윤리적 지침서입니다.</p>
+                            <div class="book-location">
+                                <i class="ph-thin ph-map-pin"></i>
+                                <span>4층(디자인도서실) | D 745.2 파841ㅇ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-meta">
+                            <span class="studio-chip"
+                                style="background: var(--color-yellow); color: #111; border: none; margin-bottom: 0.5rem; display: inline-block;">마시모
+                                비넬리</span>
+                            <h3 class="book-title">비넬리의 디자인 원칙</h3>
+                        </div>
+                        <div class="book-content">
+                            <p class="book-fact">뉴욕 지하철 노선도를 디자인한 거장이 평생의 디자인 원칙을 12가지로 정리한 유언과도 같은 책입니다.</p>
+                            <div class="book-location">
+                                <i class="ph-thin ph-map-pin"></i>
+                                <span>4층(디자인도서실) | D 745.4 비213ㅂ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-meta">
+                            <span class="studio-chip"
+                                style="background: var(--color-blue); color: #fff; border: none; margin-bottom: 0.5rem; display: inline-block;">오스틴
+                                클레온</span>
+                            <h3 class="book-title">훔쳐라, 아티스트처럼</h3>
+                        </div>
+                        <div class="book-content">
+                            <p class="book-fact">픽사 등 창조적 집단에서 추천하는 '현대적 창의성'에 관한 가장 현실적이고 명쾌한 조언입니다.</p>
+                            <div class="book-location">
+                                <i class="ph-thin ph-map-pin"></i>
+                                <span>2층(인문과학도서실) | 153.35 클233ㅎ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-meta">
+                            <span class="studio-chip"
+                                style="background: var(--color-green); color: #111; border: none; margin-bottom: 0.5rem; display: inline-block;">하라
+                                켄야</span>
+                            <h3 class="book-title">백</h3>
+                        </div>
+                        <div class="book-content">
+                            <p class="book-fact">색채로서의 흰색이 아닌, 디자인적 '여백'과 '본질'에 대한 깊은 통찰을 담은 철학서입니다.</p>
+                            <div class="book-location">
+                                <i class="ph-thin ph-map-pin"></i>
+                                <span>4층(디자인도서실) | D 701.1 원64ㅂ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category: 실무 & 커리어 -->
+        <section class="book-category-section category-section" data-category="career">
+            <div class="book-list-container expanded">
+                <div class="book-list">
+                    <div class="book-card">
+                        <div class="book-meta">
+                            <span class="studio-chip"
+                                style="background: var(--color-orange); color: #fff; border: none; margin-bottom: 0.5rem; display: inline-block;">에이드리언
+                                쇼네시</span>
+                            <h3 class="book-title">그래픽 디자인 사용설명서</h3>
+                        </div>
+                        <div class="book-content">
+                            <p class="book-fact">글로벌 에이전시 펜타그램 출신 거장들이 강력 추천하는 프로 디자이너의 생존 매뉴얼입니다.</p>
+                            <div class="book-location">
+                                <i class="ph-thin ph-map-pin"></i>
+                                <span>4층(디자인도서실) | D 741.6 쇼213ㄱ</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="book-card">
+                        <div class="book-meta">
+                            <span class="studio-chip"
+                                style="background: var(--color-purple); color: #fff; border: none; margin-bottom: 0.5rem; display: inline-block;">마이크
+                                몬테이로</span>
+                            <h3 class="book-title">디자이너, 고객에게 말하다</h3>
+                        </div>
+                        <div class="book-content">
+                            <p class="book-fact">디자인의 가치를 클라이언트에게 설득하고, 최선의 결과물을 위해 고객을 리드하는 법을 다룹니다. 원활한 소통을 원하는 디자이너의
+                                필독 대화법 가이드입니다.</p>
+                            <div class="book-location">
+                                <i class="ph-thin ph-map-pin"></i>
+                                <span>3층(기술과학도서실) | 006.7 몬833ㄷ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-meta">
+                            <span class="studio-chip"
+                                style="background: var(--color-yellow); color: #111; border: none; margin-bottom: 0.5rem; display: inline-block;">낸시
+                                스콜로스</span>
+                            <h3 class="book-title">프로세스를 디자인하라</h3>
+                        </div>
+                        <div class="book-content">
+                            <p class="book-fact">아이디어가 결과물로 발전하는 과정을 RISD 교수들이 기록한 효율적인 작업 공정 지침서입니다.</p>
+                            <div class="book-location">
+                                <i class="ph-thin ph-map-pin"></i>
+                                <span>4층(디자인도서실) | D 741.6 스825ㅍ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="book-meta">
+                            <span class="studio-chip"
+                                style="background: var(--color-blue); color: #fff; border: none; margin-bottom: 0.5rem; display: inline-block;">에이드리언
+                                쇼네시</span>
+                            <h3 class="book-title">영혼을 잃지 않는 디자이너 되기</h3>
+                        </div>
+                        <div class="book-content">
+                            <p class="book-fact">디자이너의 태도와 윤리, 그리고 창의적인 성취를 동시에 이루는 법을 다룬 시대의 명서입니다. 워크룸 김형진 디자이너의 번역으로
+                                전공생들에게 깊은 영감을 주는 실무 철학서입니다.</p>
+                            <div class="book-location">
+                                <i class="ph-thin ph-map-pin"></i>
+                                <span>4층(디자인도서실) | D 741.6023 쇼213ㅇ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category: 국민대 시디과 교수님들의 추천서 -->
+        <section class="book-category-section category-section" data-category="professor">
+            <div class="book-list-container expanded">
+                <div class="book-list">
+                    <div class="book-card">
+                        <div class="book-meta">
+                            <span class="studio-chip"
+                                style="background: var(--color-purple); color: #fff; border: none; margin-bottom: 0.5rem; display: inline-block;">스콧
+                                맥클라우드</span>
+                            <h3 class="book-title">만화의 이해</h3>
+                        </div>
+                        <div class="book-content">
+                            <p class="book-fact">만화라는 형식을 빌려 '비주얼 커뮤니케이션'의 정수를 보여주는 책으로, 기호학적 상징과 인간의 시각적 인지 과정을 가장 명쾌하게
+                                풀어낸 시각 언어의 교과서입니다.</p>
+                            <div class="book-location">
+                                <i class="ph-thin ph-map-pin"></i>
+                                <span>4층(디자인도서실),유리방,커뮤니티룸 | D 741.5 맥828마</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="nav-back">
+            <button class="btn-text" onclick="location.href='outside.html'">
+                <i class="ph-thin ph-arrow-left"></i>
+                <span>돌아가기</span>
+            </button>
+        </div>
+    </main>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

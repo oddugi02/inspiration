@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영감 | 지식 조각</title>
+
+    <!-- Pretendard Font -->
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container knowledge-page-container">
+        <header class="header">
+            <h1 class="title">지식 조각</h1>
+            <p class="subtitle">매일 새로운 영감의 파편을 수집해보세요</p>
+        </header>
+
+        <!-- Dynamic Content Controls -->
+        <div class="knowledge-controls">
+            <button class="btn-refresh" id="btn-refresh">
+                <i class="ph-bold ph-arrows-clockwise"></i>
+                <span>새로운 조각 찾기</span>
+            </button>
+        </div>
+
+        <div class="knowledge-discovery-hub">
+            <!-- Slot 1: Design History & Concepts -->
+            <div class="knowledge-slot" id="slot-history">
+                <div class="slot-header">
+                    <i class="ph-thin ph-scroll"></i>
+                    <h2>디자인 역사 & 개념</h2>
+                </div>
+                <div class="knowledge-card-placeholder" id="card-history">
+                    <!-- Content injected via JS -->
+                </div>
+            </div>
+
+            <!-- Slot 2: Design Trend -->
+            <div class="knowledge-slot" id="slot-trend">
+                <div class="slot-header">
+                    <i class="ph-thin ph-trend-up"></i>
+                    <h2>디자인 트렌드</h2>
+                </div>
+                <div class="knowledge-card-placeholder" id="card-trend">
+                    <!-- Content injected via JS -->
+                </div>
+            </div>
+
+            <!-- Slot 3: Aesthetic Keyword -->
+            <div class="knowledge-slot" id="slot-aesthetic">
+                <div class="slot-header">
+                    <i class="ph-thin ph-sparkle"></i>
+                    <h2>미학 키워드</h2>
+                </div>
+                <div class="knowledge-card-placeholder" id="card-aesthetic">
+                    <!-- Content injected via JS -->
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-back">
+            <button class="btn-text" onclick="location.href='inside.html'">
+                <i class="ph-thin ph-arrow-left"></i>
+                <span>돌아가기</span>
+            </button>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

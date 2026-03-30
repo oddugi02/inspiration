@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영감 | 디자인 스튜디오</title>
+
+    <!-- Pretendard Font -->
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="nav-top-left">
+        <button class="btn-icon-only" onclick="location.href='inside.html'" title="뒤로가기">
+            <i class="ph-thin ph-arrow-left"></i>
+        </button>
+    </nav>
+
+    <main class="container">
+        <header class="header-discovery">
+            <div>
+                <h1 class="title">디자인 스튜디오</h1>
+                <p class="subtitle">세계적인 에이전시부터 로컬 스튜디오까지, 최상위 레벨의 실무 작업 아카이브</p>
+            </div>
+        </header>
+
+        <div class="filter-chip-container global-filter-container">
+            <button class="filter-chip active" data-filter="all">
+                <i class="ph-thin ph-circles-four"></i>전체
+            </button>
+            <button class="filter-chip" data-filter="branding">
+                <i class="ph-thin ph-fingerprint"></i>브랜딩
+            </button>
+            <button class="filter-chip" data-filter="graphic">
+                <i class="ph-thin ph-pen-nib"></i>그래픽 & 에디토리얼
+            </button>
+            <button class="filter-chip" data-filter="experiment">
+                <i class="ph-thin ph-flask"></i>시각 실험
+            </button>
+            <button class="filter-chip" data-filter="digital">
+                <i class="ph-thin ph-desktop"></i>디지털 & 모션
+            </button>
+        </div>
+
+        <div class="studio-categories reveal">
+            <!-- 1. 브랜딩 & 아이덴티티 -->
+            <div class="studio-category" data-category="branding">
+                <section class="studio-grid">
+                    <a href="https://www.pentagram.com" target="_blank" class="studio-card" data-tag="종합 브랜딩">
+                        <span class="studio-chip" style="background: var(--color-orange); color: #fff; border: none;">종합 브랜딩</span>
+                        <h3 class="studio-name">Pentagram (펜타그램)</h3>
+                        <p class="studio-description">세계 최대 규모의 독립 디자인 스튜디오. 20명 이상의 파트너가 각기 다른 스타일로 수천 개의 프로젝트를 진행하여, 거의 모든 시각 디자인 분야의 정답지를 볼 수 있습니다.</p>
+                        <div class="studio-action">
+                            <span>사이트 방문하기</span>
+                            <i class="ph-thin ph-arrow-up-right"></i>
+                        </div>
+                    </a>
+                    <a href="https://wearecollins.com/case-studies?view=spines" target="_blank" class="studio-card" data-tag="전략적 리브랜딩">
+                        <span class="studio-chip" style="background: var(--color-yellow); color: #111; border: none;">전략적 리브랜딩</span>
+                        <h3 class="studio-name">Collins (콜린스)</h3>
+                        <p class="studio-description">스포티파이, 트위치 등 우리가 아는 대형 테크 기업의 리브랜딩을 주도합니다. 전략적인 기획과 파격적인 비주얼이 만났을 때 생기는 파괴력을 수많은 사례로 증명합니다.</p>
+                        <div class="studio-action">
+                            <span>사이트 방문하기</span>
+                            <i class="ph-thin ph-arrow-up-right"></i>
+                        </div>
+                    </a>
+                    <a href="https://andwalsh.com" target="_blank" class="studio-card" data-tag="맥시멀 브랜딩">
+                        <span class="studio-chip" style="background: var(--color-blue); color: #fff; border: none;">맥시멀 브랜딩</span>
+                        <h3 class="studio-name">&Walsh (&월시)</h3>
+                        <p class="studio-description">전설적인 스테판 사그마이스터의 파트너였던 제시카 월시가 이끄는 곳. 화려하고 맥시멀한 비주얼 임팩트와 상업적 브랜딩을 엄청난 양의 포트폴리오로 보여줍니다.</p>
+                        <div class="studio-action">
+                            <span>사이트 방문하기</span>
+                            <i class="ph-thin ph-arrow-up-right"></i>
+                        </div>
+                    </a>
+                    <a href="https://studiofnt.com" target="_blank" class="studio-card" data-tag="브랜드 아이덴티티">
+                        <span class="studio-chip" style="background: var(--color-green); color: #111; border: none;">브랜드 아이덴티티</span>
+                        <h3 class="studio-name">Studio fnt (스튜디오 fnt)</h3>
+                        <p class="studio-description">한국 브랜딩 스튜디오 중 가장 탄탄하고 방대한 아카이브를 자랑합니다. 현대카드, 국립현대미술관 등 국내 주요 프로젝트의 시스템 설계 과정을 깊이 있게 공부할 수 있습니다.</p>
+                        <div class="studio-action">
+                            <span>사이트 방문하기</span>
+                            <i class="ph-thin ph-arrow-up-right"></i>
+                        </div>
+                    </a>
+                </section>
+            </div>
+
+            <!-- 2. 그래픽 & 에디토리얼 -->
+            <div class="studio-category" data-category="graphic">
+                <section class="studio-grid">
+                    <a href="https://ag.co.kr/" target="_blank" class="studio-card" data-tag="타이포그래피 & 출판">
+                        <span class="studio-chip" style="background: var(--color-purple); color: #fff; border: none;">타이포그래피 & 출판</span>
+                        <h3 class="studio-name">Ahn Graphics (안그라픽스)</h3>
+                        <p class="studio-description">안상수 디자이너가 설립한 한국 대표 디자인 전문 기업입니다. 한글 타이포그래피의 근간을 다지고 수많은 단행본과 에디토리얼, 브랜딩 프로젝트를 통해 한국 시각 디자인의 역사를 이끌어오고 있습니다.</p>
+                        <div class="studio-action">
+                            <span>사이트 방문하기</span>
+                            <i class="ph-thin ph-arrow-up-right"></i>
+                        </div>
+                    </a>
+                    <a href="https://ordinarypeople.info" target="_blank" class="studio-card" data-tag="그래픽 디자인">
+                        <span class="studio-chip" style="background: var(--color-orange); color: #fff; border: none;">그래픽 디자인</span>
+                        <h3 class="studio-name">Ordinary People (오디너리피플)</h3>
+                        <p class="studio-description">국내 그래픽 씬의 아이콘. '매일매일 그래픽' 프로젝트부터 대형 브랜드 협업까지, 학생들이 따라 해보고 싶어 할 만한 트렌디한 작업물이 수백 개 쌓여 있습니다.</p>
+                        <div class="studio-action">
+                            <span>사이트 방문하기</span>
+                            <i class="ph-thin ph-arrow-up-right"></i>
+                        </div>
+                    </a>
+                    <a href="https://everyday-practice.com" target="_blank" class="studio-card" data-tag="포스터 & 사회적 메시지">
+                        <span class="studio-chip" style="background: var(--color-orange); color: #fff; border: none;">포스터 & 사회적 메시지</span>
+                        <h3 class="studio-name">Everyday Practice (일상의 실천)</h3>
+                        <p class="studio-description">사회적 메시지와 실험적 그래픽의 결합에 있어 국내에서 가장 독보적인 아카이브를 보유했습니다. 포스터 디자인의 조형미를 공부하기에 이보다 좋은 곳은 없습니다.</p>
+                        <div class="studio-action">
+                            <span>사이트 방문하기</span>
+                            <i class="ph-thin ph-arrow-up-right"></i>
+                        </div>
+                    </a>
+                    <a href="http://workroom.kr" target="_blank" class="studio-card" data-tag="에디토리얼 & 타이포그래피">
+                        <span class="studio-chip" style="background: var(--color-green); color: #111; border: none;">에디토리얼 & 타이포그래피</span>
+                        <h3 class="studio-name">Workroom (워크룸)</h3>
+                        <p class="studio-description">에디토리얼과 타이포그래피의 끝판왕. 수백 권의 책과 전시 도록 작업을 통해 텍스트와 이미지의 위계를 어떻게 정교하게 설계하는지 보여주는 살아있는 교과서입니다.</p>
+                        <div class="studio-action">
+                            <span>사이트 방문하기</span>
+                            <i class="ph-thin ph-arrow-up-right"></i>
+                        </div>
+                    </a>
+                    <a href="https://www.sulki-min.com/wp/sulki-and-min-kr/" target="_blank" class="studio-card" data-tag="개념주의 그래픽">
+                        <span class="studio-chip" style="background: var(--color-purple); color: #fff; border: none;">개념주의 그래픽</span>
+                        <h3 class="studio-name">Sulki and Min (슬기와 민)</h3>
+                        <p class="studio-description">한국 개념주의 디자인의 상징. 작업의 개수도 많지만 각 작업에 담긴 지적 논리가 워낙 깊어, 비평적인 시각 디자인을 공부하는 학생들에게 필수적인 아카이브입니다.</p>
+                        <div class="studio-action">
+                            <span>사이트 방문하기</span>
+                            <i class="ph-thin ph-arrow-up-right"></i>
+                        </div>
+                    </a>
+                    <a href="https://hxx.kr" target="_blank" class="studio-card" data-tag="전시 아이덴티티">
+                        <span class="studio-chip" style="background: var(--color-yellow); color: #111; border: none;">전시 아이덴티티</span>
+                        <h3 class="studio-name">Studio Hik (스튜디오 히익)</h3>
+                        <p class="studio-description">국내 주요 미술관 전시 그래픽의 단골 스튜디오. 포스터, 도록, 공간 그래픽이 하나의 주제로 어떻게 관통되는지 보여주는 전시 아이덴티티 사례가 풍부합니다.</p>
+                        <div class="studio-action">
+                            <span>사이트 방문하기</span>
+                            <i class="ph-thin ph-arrow-up-right"></i>
+                        </div>
+                    </a>
+                </section>
+            </div>
+
+            <!-- 3. 시각 실험 & 타이포그래피 -->
+            <div class="studio-category" data-category="experiment">
+                <section class="studio-grid">
+                    <a href="https://www.hort.org.uk" target="_blank" class="studio-card" data-tag="실험적 시각 예술">
+                        <span class="studio-chip" style="background: var(--color-blue); color: #fff; border: none;">실험적 시각 예술</span>
+                        <h3 class="studio-name">Hort (호르트)</h3>
+                        <p class="studio-description">베를린을 기반으로 규칙을 파괴하는 실험적 타이포그래피와 시각 예술을 선보입니다. 디자인의 유희적 가치와 디자이너의 직관을 극대화하는 팀입니다.</p>
+                        <div class="studio-action">
+                            <span>사이트 방문하기</span>
+                            <i class="ph-thin ph-arrow-up-right"></i>
+                        </div>
+                    </a>
+                    <a href="https://dtan.studio" target="_blank" class="studio-card" data-tag="아날로그 & 인쇄">
+                        <span class="studio-chip" style="background: var(--color-blue); color: #fff; border: none;">아날로그 & 인쇄</span>
+                        <h3 class="studio-name">DTAN Studio</h3>
+                        <p class="studio-description">베를린 기반의 디자인 및 프린트 스튜디오. 리소그래프와 아날로그적 질감을 활용해 디지털과 수작업의 경계를 허무는 독특한 시각 언어를 제안합니다.</p>
+                        <div class="studio-action">
+                            <span>사이트 방문하기</span>
+                            <i class="ph-thin ph-arrow-up-right"></i>
+                        </div>
+                    </a>
+                    <a href="https://spin.co.uk" target="_blank" class="studio-card" data-tag="타이포 시스템">
+                        <span class="studio-chip" style="background: var(--color-orange); color: #fff; border: none;">타이포 시스템</span>
+                        <h3 class="studio-name">Spin (스핀)</h3>
+                        <p class="studio-description">런던 베이스의 스튜디오로, 타이포그래피를 실험적인 그래픽으로 치환하는 데 천재적입니다. 로고 하나로 수십 가지 변주를 만드는 시스템 디자인의 정수를 볼 수 있습니다.</p>
+                        <div class="studio-action">
+                            <span>사이트 방문하기</span>
+                            <i class="ph-thin ph-arrow-up-right"></i>
+                        </div>
+                    </a>
+                    <a href="https://bureauborsche.com" target="_blank" class="studio-card" data-tag="브루탈리즘 & 하이패션">
+                        <span class="studio-chip" style="background: var(--color-purple); color: #fff; border: none;">브루탈리즘 & 하이패션</span>
+                        <h3 class="studio-name">Bureau Borsche (브로 뵈르셰)</h3>
+                        <p class="studio-description">발렌시아가 등 하이 패션 씬의 비주얼 트렌드를 선도합니다. 거칠고 투박한 브루탈리즘 스타일을 가장 세련되게 풀어내는 현시대 가장 '힙한' 스튜디오입니다.</p>
+                        <div class="studio-action">
+                            <span>사이트 방문하기</span>
+                            <i class="ph-thin ph-arrow-up-right"></i>
+                        </div>
+                    </a>
+                </section>
+            </div>
+
+            <!-- 4. 디지털 & 모션 -->
+            <div class="studio-category" data-category="digital">
+                <section class="studio-grid">
+                    <a href="https://studiodumbar.com" target="_blank" class="studio-card" data-tag="모션 & 비주얼 시스템">
+                        <span class="studio-chip" style="background: var(--color-yellow); color: #111; border: none;">모션 & 비주얼 시스템</span>
+                        <h3 class="studio-name">Studio Dumbar (스튜디오 둠바)</h3>
+                        <p class="studio-description">네덜란드 디자인의 자부심. 단순한 로고를 넘어 거대한 시각 시스템과 모션 그래픽이 어떻게 유기적으로 움직이는지 보여주는 수십 년치의 방대한 기록이 있습니다.</p>
+                        <div class="studio-action">
+                            <span>사이트 방문하기</span>
+                            <i class="ph-thin ph-arrow-up-right"></i>
+                        </div>
+                    </a>
+                    <a href="https://www.plus-ex.com/experience" target="_blank" class="studio-card" data-tag="UI/UX & BX">
+                        <span class="studio-chip" style="background: var(--color-green); color: #111; border: none;">UI/UX & BX</span>
+                        <h3 class="studio-name">Plus X (플러스 엑스)</h3>
+                        <p class="studio-description">국내 UI/UX 및 브랜드 경험 디자인의 표준을 만든 곳입니다. 디자인 가이드라인을 어떻게 문서화하고 시스템화하는지 보고 싶다면 이곳의 프로젝트 케이스 스터디를 정독하세요.</p>
+                        <div class="studio-action">
+                            <span>사이트 방문하기</span>
+                            <i class="ph-thin ph-arrow-up-right"></i>
+                        </div>
+                    </a>
+                    <a href="https://www.universaleverything.com" target="_blank" class="studio-card" data-tag="CGI & 생성 예술">
+                        <span class="studio-chip" style="background: var(--color-blue); color: #fff; border: none;">CGI & 생성 예술</span>
+                        <h3 class="studio-name">Universal Everything (유니버설 에브리씽)</h3>
+                        <p class="studio-description">CGI와 생성 예술(Generative Art)의 정점입니다. 코딩과 3D 기술을 결합하여 살아 움직이는 디지털 유기체와 같은 압도적인 시각 경험을 설계합니다.</p>
+                        <div class="studio-action">
+                            <span>사이트 방문하기</span>
+                            <i class="ph-thin ph-arrow-up-right"></i>
+                        </div>
+                    </a>
+                </section>
+            </div>
+        </div>
+
+        <div class="nav-back">
+            <button class="btn-text" onclick="location.href='inside.html'">
+                <i class="ph-thin ph-arrow-left"></i>
+                <span>돌아가기</span>
+            </button>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
